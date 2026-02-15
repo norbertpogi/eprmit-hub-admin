@@ -1,0 +1,29 @@
+.badge { border-color: rgba(17,24,39,0.12); }
+.dot { width: 8px; height: 8px; border-radius: 999px; background: #9ca3af; }
+
+.DRAFT { background: #fff; }
+.DRAFT .dot { background: #9ca3af; }
+
+.SUBMITTED { background: rgba(30,90,168,0.06); }
+.SUBMITTED .dot { background: #1e5aa8; }
+
+.UNDER_REVIEW { background: rgba(30,90,168,0.06); }
+.UNDER_REVIEW .dot { background: #1e5aa8; }
+
+.FOR_COMPLIANCE { background: rgba(245,158,11,0.10); }
+.FOR_COMPLIANCE .dot { background: #f59e0b; }
+
+.FOR_PAYMENT { background: rgba(99,102,241,0.10); }
+.FOR_PAYMENT .dot { background: #6366f1; }
+
+.FOR_APPROVAL { background: rgba(14,165,233,0.10); }
+.FOR_APPROVAL .dot { background: #0ea5e9; }
+
+.APPROVED { background: rgba(16,185,129,0.10); }
+.APPROVED .dot { background: #10b981; }
+
+.RELEASED { background: rgba(16,185,129,0.10); }
+.RELEASED .dot { background: #10b981; }
+
+.REJECTED { background: rgba(239,68,68,0.10); }
+.REJECTED .dot { background: #ef4444; }

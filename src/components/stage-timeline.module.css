@@ -1,0 +1,76 @@
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.step { min-width: 0; }
+
+.top {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: rgba(17,24,39,0.12);
+  margin-left: 6px;
+}
+
+.dotDone, .dotCurrent, .dotTodo {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+}
+
+.dotDone { background: #10b981; }
+.dotCurrent { background: #1e5aa8; }
+.dotTodo { background: rgba(17,24,39,0.18); }
+
+.labelDone, .labelCurrent, .labelTodo {
+  margin-top: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.labelDone { color: #065f46; }
+.labelCurrent { color: #1e5aa8; font-weight: 700; }
+.labelTodo { color: #6b7280; }
+
+.draftRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.draftChip {
+  background: rgba(17,24,39,0.06);
+  border: 1px solid rgba(17,24,39,0.10);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.draftText { color: #6b7280; font-size: 12px; }
+
+.rejected {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(239,68,68,0.25);
+  background: rgba(239,68,68,0.10);
+  color: #b91c1c;
+  font-weight: 800;
+  width: fit-content;
+}
+
+@media (max-width: 920px) {
+  .timeline { grid-template-columns: 1fr; }
+  .line { display: none; }
+  .top { gap: 8px; }
+}
